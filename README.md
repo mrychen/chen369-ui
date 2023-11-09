@@ -1,24 +1,30 @@
-# chen_btn_cli_2
+# chen369-ui 组件库
 
-## Project setup
-```
-yarn install
-```
+### 快速开始
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+### 第一步
 
-### Compiles and minifies for production
-```
-yarn build
+#### 1.安装组件库
+
+```bash
+<!-- npm -->
+npm i chen369-ui
+<!-- yarn -->
+yarn add chen369-ui
 ```
 
-### Lints and fixes files
-```
-yarn lint
+#### 2.引用组件库
+
+```javascript
+//全部引入
+import "chen369-ui/dist/css/index.css";
+import Chen369Ui from "chen369-ui";
+Vue.use(Chen369Ui);
+
+//按需引入
+import "chen369-ui/dist/css/ChenButton.css";
+import { ChenButton } from "chen369-ui";
+Vue.use(ChenButton);
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### 3.使用组件库
