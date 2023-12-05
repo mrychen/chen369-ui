@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>人脸识别组件 | chen369-ui</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/chen369-ui/assets/css/0.styles.73f1d571.css" as="style"><link rel="preload" href="/chen369-ui/assets/js/app.376be9ec.js" as="script"><link rel="preload" href="/chen369-ui/assets/js/2.1d3be87d.js" as="script"><link rel="preload" href="/chen369-ui/assets/js/1.aa6fe94e.js" as="script"><link rel="preload" href="/chen369-ui/assets/js/28.b998808e.js" as="script"><link rel="prefetch" href="/chen369-ui/assets/js/10.788a054e.js"><link rel="prefetch" href="/chen369-ui/assets/js/11.777c7849.js"><link rel="prefetch" href="/chen369-ui/assets/js/12.5be71c51.js"><link rel="prefetch" href="/chen369-ui/assets/js/13.e5790e93.js"><link rel="prefetch" href="/chen369-ui/assets/js/14.2cb3d856.js"><link rel="prefetch" href="/chen369-ui/assets/js/15.d561524d.js"><link rel="prefetch" href="/chen369-ui/assets/js/16.91651f63.js"><link rel="prefetch" href="/chen369-ui/assets/js/17.a5c0e632.js"><link rel="prefetch" href="/chen369-ui/assets/js/18.709a3558.js"><link rel="prefetch" href="/chen369-ui/assets/js/19.ead44d86.js"><link rel="prefetch" href="/chen369-ui/assets/js/20.69d80c36.js"><link rel="prefetch" href="/chen369-ui/assets/js/21.274c0b03.js"><link rel="prefetch" href="/chen369-ui/assets/js/22.d6814fd5.js"><link rel="prefetch" href="/chen369-ui/assets/js/23.9368e570.js"><link rel="prefetch" href="/chen369-ui/assets/js/24.23c46b0f.js"><link rel="prefetch" href="/chen369-ui/assets/js/25.567a11f1.js"><link rel="prefetch" href="/chen369-ui/assets/js/26.98458fb8.js"><link rel="prefetch" href="/chen369-ui/assets/js/27.8817c716.js"><link rel="prefetch" href="/chen369-ui/assets/js/3.a2d58452.js"><link rel="prefetch" href="/chen369-ui/assets/js/4.6cc29789.js"><link rel="prefetch" href="/chen369-ui/assets/js/5.6709d6d7.js"><link rel="prefetch" href="/chen369-ui/assets/js/6.4ae0d89a.js"><link rel="prefetch" href="/chen369-ui/assets/js/7.0c193685.js"><link rel="prefetch" href="/chen369-ui/assets/js/vendors~docsearch.bdc2fb18.js">
+    <link rel="stylesheet" href="/chen369-ui/assets/css/0.styles.73f1d571.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/chen369-ui/" class="home-link router-link-active"><!----> <span class="site-name">chen369-ui</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/chen369-ui/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/mrychen/chen369-ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.npmjs.com/package/chen369-ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/chen369-ui/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/mrychen/chen369-ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.npmjs.com/package/chen369-ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/chen369-ui/" aria-current="page" class="sidebar-link">chen369-ui 组件库</a></li><li><a href="/chen369-ui/componentsDocs/ChenButton.html" class="sidebar-link">按钮组件</a></li><li><a href="/chen369-ui/componentsDocs/ChenKeyboard.html" class="sidebar-link">键盘组件</a></li><li><a href="/chen369-ui/componentsDocs/FaceRecognition2.html" class="sidebar-link">人脸识别组件</a></li><li><a href="/chen369-ui/componentsDocs/FaceRecognition2Msg.html" aria-current="page" class="active sidebar-link">人脸识别组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/chen369-ui/componentsDocs/FaceRecognition2Msg.html#使用注意事项" class="sidebar-link">使用注意事项：</a></li><li class="sidebar-sub-header"><a href="/chen369-ui/componentsDocs/FaceRecognition2Msg.html#使用组件库" class="sidebar-link">使用组件库</a></li><li class="sidebar-sub-header"><a href="/chen369-ui/componentsDocs/FaceRecognition2Msg.html#参数" class="sidebar-link">参数</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="人脸识别组件"><a href="#人脸识别组件" class="header-anchor">#</a> 人脸识别组件</h1> <h2 id="使用注意事项"><a href="#使用注意事项" class="header-anchor">#</a> 使用注意事项：</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">3.</span>在vue2中安装vant2；vue2只能使用vant2；
+人脸识别组件是使用：vant2开发的；所以需要先项目安装vant2
+<span class="token comment">//全部引入</span>
+<span class="token keyword">import</span> <span class="token string">&quot;chen369-ui/dist/css/index.css&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Chen369Ui <span class="token keyword">from</span> <span class="token string">&quot;chen369-ui&quot;</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Chen369Ui<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//按需引入</span>
+<span class="token comment">//引入按钮</span>
+<span class="token keyword">import</span> <span class="token string">&quot;chen369-ui/dist/css/ChenButton.css&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ChenButton <span class="token keyword">from</span> <span class="token string">&quot;chen369-ui/dist/ChenButton.umd&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'../components/css/ChenKeybord.scss'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>ChenButton<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//引入键盘</span>
+<span class="token keyword">import</span> <span class="token string">&quot;chen369-ui/dist/css/ChenKeybord.css&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ChenKeybord <span class="token keyword">from</span> <span class="token string">'chen369-ui/dist/ChenKeybord.umd'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>ChenKeybord<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//引入人脸识别--按需引入</span>
+<span class="token number">1.</span><span class="token literal-property property">在html中</span><span class="token operator">:</span>引入在线组件js文件，注意<span class="token number">2</span>个； 
+<span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>hanwebAPI<span class="token operator">-</span>可信授权<span class="token operator">--</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>script
+    src<span class="token operator">=</span><span class="token string">&quot;https://ganfutong.jiangxi.gov.cn/jmopenpub/jmopen_files/webapp/html5/gftAPI/hanwebAPI-2.0.0.min.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>hanweb_h5_components人脸识别<span class="token operator">-</span>官方跳链<span class="token operator">--</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;https://ganfutong.jiangxi.gov.cn/jmopenpub/jmopen_files/webapp/html5/hwh5cps2/2.0.0/index.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+<span class="token number">2.</span>在main<span class="token punctuation">.</span>js中<span class="token operator">:</span>注册人脸识别组件：
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>hanweb_h5_components<span class="token punctuation">)</span><span class="token comment">//注意：由于hanweb_h5_components没有在js文件申明，这里直接使用；默认会报eslint错误；需关闭eslint或略错误；代码才会正常运行</span>
+
+<span class="token number">3.</span>在vue2中安装vant2；vue2只能使用vant2；
+人脸识别组件是使用：vant2开发的；所以需要先项目安装vant2
+
+<span class="token number">4.</span>在项目中<span class="token operator">--</span>按需引入‘人脸识别’封装组件
+<span class="token keyword">import</span> FaceRecognition2Msg <span class="token keyword">from</span> <span class="token string">'chen369-ui/dist/FaceRecognition2Msg.umd'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>FaceRecognition2Msg <span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="使用组件库"><a href="#使用组件库" class="header-anchor">#</a> 使用组件库</h2> <div class="language- extra-class"><pre class="language-text"><code>
+
+人脸识别组件的使用：需要为组件设置一个ref,并通过this.$refs来调用dom中的certificateCommit()方法
+&lt;FaceRecognition2Msg :userInfo=&quot;userInfo&quot; ref=&quot;rlsb&quot; msgId=&quot;msgId&quot;&gt;&lt;/FaceRecognition2Msg &gt;
+
+例如： this.$refs[&quot;rlsb&quot;].certificateCommit();//调用人脸调用的开始方法；
+
+</code></pre></div><h2 id="参数"><a href="#参数" class="header-anchor">#</a> 参数</h2> <table><thead><tr><th>参数</th> <th>是否必须</th> <th>参数类型</th></tr></thead> <tbody><tr><td>userInfo</td> <td>√</td> <td>object:{<br>name-string<br>cardId-string<br>mobile-必须，string<br>}}</td></tr> <tr><td>ref</td> <td>√</td> <td>自定义，用于父调用子组件的方法</td></tr> <tr><td>msgId</td> <td>√</td> <td>msgId必须；用户信息+tocken换madId</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/chen369-ui/componentsDocs/FaceRecognition2.html" class="prev">
+        人脸识别组件
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/chen369-ui/assets/js/app.376be9ec.js" defer></script><script src="/chen369-ui/assets/js/2.1d3be87d.js" defer></script><script src="/chen369-ui/assets/js/1.aa6fe94e.js" defer></script><script src="/chen369-ui/assets/js/28.b998808e.js" defer></script>
+  </body>
+</html>
